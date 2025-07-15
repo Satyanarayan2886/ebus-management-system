@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin - Post Bus Details</title>
+  <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-database-compat.js"></script>
+  <script src="app.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <h1>Ebus Management</h1>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="admin.html">Admin</a>
+      <a href="user.html">User</a>
+    </div>
+  </nav>
+
+  <main>
+    <div class="container">
+      <h2>Driver Login</h2>
+      <input type="email" id="email" placeholder="Email">
+      <input type="password" id="password" placeholder="Password">
+      <button onclick="adminLogin()">Login</button>
+
+      <h2>Post Bus Info</h2>
+      <input type="text" id="busNo" placeholder="Bus Number">
+      <input type="text" id="busType" placeholder="Bus Type">
+      <input type="text" id="route" placeholder="Route">
+      <input type="text" id="contact" placeholder="Contact No">
+      <button onclick="submitBusInfo()">Submit Info</button>
+
+      <h2>Track Bus Location</h2>
+<input type="text" id="trackBusNo" placeholder="Enter Bus No to Track">
+<button onclick="startTracking()">Start Tracking Location</button>
+<button onclick="stopTracking()">Stop Tracking</button>
+
+
+    </div>
+  </main>
+</body>
+</html>

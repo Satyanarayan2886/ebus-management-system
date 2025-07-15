@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User - Search Bus</title>
+  <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-database-compat.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD6gcLxMY3jBeEjUrt4JsGicNsR1jaqJFw"></script>
+  <script src="app.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>User Login</h2>
+  <input type="email" id="userEmail" placeholder="Email">
+  <input type="password" id="userPassword" placeholder="Password">
+  <button onclick="userLogin()">Login</button>
+
+  <h3>User Registration</h3>
+  <input type="email" id="regEmail" placeholder="Enter your email">
+  <input type="password" id="regPassword" placeholder="Create password">
+  <button onclick="registerUser()">Register</button>
+
+  <h2>Search Bus</h2>
+  <input type="text" id="source" placeholder="Source">
+  <input type="text" id="destination" placeholder="Destination">
+  <button onclick="searchBus()">Search</button>
+
+  <h2>Live Location of Bus</h2>
+<input type="text" id="liveBusNo" placeholder="Enter Bus Number">
+<button onclick="showBusLocation()">Show Bus Location</button>
+
+<h2>Estimate Arrival Time</h2>
+<input type="text" id="destinationPlace" placeholder="Enter Destination Address">
+<button onclick="estimateArrival()">Get ETA</button>
+<div id="etaResult" style="margin-top: 15px;"></div>
+
+  <div id="map" style="width:100%;height:400px;"></div>
+</body>
+</html>
