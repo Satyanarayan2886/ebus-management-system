@@ -40,4 +40,4 @@ Drivers/Admins can:
 
 ## 🖥️ How to Run Locally
 
-1. Clone the repo:
+1. Clone the repo:https://github.com/Satyanarayan2886/ebus-management-system
